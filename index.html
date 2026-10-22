@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Fajar Creative</title>
+
+    <!-- Tailwind CSS compiled locally -->
+    <link rel="stylesheet" href="tailwind.css" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="bg-black text-white antialiased">
+    <!-- =====================================================
+         ANIMATED GRID BACKGROUND
+    ====================================================== -->
+    <div class="grid-background"></div>
+
+    <!-- =====================================================
+         NAVBAR
+    ====================================================== -->
+    <header class="fixed top-0 left-0 right-0 z-50 px-4 pt-4">
+      <nav class="navbar-glass mx-auto max-w-6xl">
+        <div class="flex items-center justify-between px-5 py-4">
+          <!-- LOGO -->
+          <a href="#home" class="flex items-center gap-3">
+            <div class="logo-icon">
+              <i class="fa-solid fa-bolt"></i>
+            </div>
+
+            <div>
+              <span class="block text-lg font-bold tracking-tight">
+                FAJAR<span class="text-lime-400">.</span>
+              </span>
+            </div>
+          </a>
+
+          <!-- DESKTOP MENU -->
+          <div class="hidden items-center gap-8 md:flex">
+            <a href="#home" class="nav-link active"> Beranda </a>
+
+            <a href="#skillsHeading" class="nav-link"> Layanan </a>
+
+            <a href="#contactHeading" class="nav-link"> Kontak </a>
+          </div>
+
+          <!-- DESKTOP CTA -->
+          <a
+            href="https://wa.me/6285189402618"
+            class="hidden rounded-full bg-lime-400 px-5 py-2.5 text-sm font-bold text-black transition duration-300 hover:bg-lime-300 hover:shadow-[0_0_25px_rgba(204,255,0,0.35)] md:inline-flex"
+          >
+            Hubungi Saya
+            <i class="fa-solid fa-arrow-right ml-2"></i>
+          </a>
+
+          <!-- MOBILE BUTTON -->
+          <button
+            id="menuButton"
+            class="flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-white transition hover:border-lime-400/50 hover:text-lime-400 md:hidden"
+            aria-label="Open menu"
+          >
+            <i id="menuIcon" class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+
+        <!-- MOBILE MENU -->
+        <div
+          id="mobileMenu"
+          class="mobile-menu hidden border-t border-white/10 px-5 pb-5 pt-4 md:hidden"
+        >
+          <div class="flex flex-col gap-2">
+            <a href="#home" class="mobile-nav-link">
+              <i class="fa-solid fa-house"></i>
+              Beranda
+            </a>
+
+            <a href="#skillsHeading" class="mobile-nav-link">
+              <i class="fa-solid fa-code"></i>
+              Layanan
+            </a>
+
+            <a href="#contactHeading" class="mobile-nav-link">
+              <i class="fa-solid fa-envelope"></i>
+              Kontak
+            </a>
+
+            <a
+              href="https://wa.me/6285189402618" target="_blank"
+              class="mt-3 flex items-center justify-center rounded-xl bg-lime-400 px-5 py-3 font-bold text-black"
+            >
+              Hubungi Saya
+              <i class="fa-solid fa-arrow-right ml-2"></i>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- =================================================
+             HERO
+        ================================================== -->
+      <section
+        id="home"
+        class="relative flex min-h-screen items-center overflow-hidden px-5 pt-28"
+      >
+        <!-- Glow -->
+        <div class="hero-glow"></div>
+
+        <div class="relative z-10 mx-auto w-full max-w-6xl">
+          <div class="max-w-4xl">
+            <!-- Heading -->
+            <h1
+              class="max-w-4xl text-5xl font-black leading-[0.95] tracking-[-0.04em] sm:text-6xl lg:text-8xl"
+            >
+              ADA YANG BISA SAYA
+              <span class="text-lime-400">BANTU?</span>
+              <br />
+
+              HARGA
+              <span class="heading-outline">MURAH!</span>
+            </h1>
+
+            <!-- Description -->
+            <p
+              class="mt-8 max-w-2xl text-base leading-relaxed text-zinc-400 sm:text-lg"
+            >
+              Solusi digital untuk membantu bisnis, UMKM, personal brand, dan
+              kebutuhan kreatif kamu tampil lebih profesional, modern, dan siap
+              berkembang.
+            </p>
+
+            <!-- Buttons -->
+            <div class="mt-9 flex flex-col gap-3 sm:flex-row">
+              <a
+                href="#skillsHeading"
+                class="group inline-flex items-center justify-center rounded-md bg-lime-400 px-7 py-3.5 font-bold text-black transition duration-300 hover:bg-lime-300 hover:shadow-[0_0_35px_rgba(204,255,0,0.3)]"
+              >
+                Lihat Layanan
+
+                <i
+                  class="fa-solid fa-arrow-down ml-2 transition-transform duration-300 group-hover:translate-y-1"
+                ></i>
+              </a>
+
+              <a
+                href="#contactHeading"
+                class="inline-flex items-center justify-center rounded-md border border-white/10 bg-white/5 px-7 py-3.5 font-semibold backdrop-blur-md transition duration-300 hover:border-lime-400 hover:bg-lime-400/5"
+              >
+                Hubungi Saya
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =================================================
+             SKILLS
+        ================================================== -->
+      <section id="skills" class="relative px-5 py-24 sm:py-32">
+        <div class="mx-auto max-w-6xl">
+          <!-- Section Heading -->
+          <div
+            class="mb-12 flex flex-col justify-between gap-6 md:flex-row md:items-end"
+            id="skillsHeading"
+          >
+            <div>
+              <p
+                class="mb-3 text-sm font-bold uppercase tracking-[0.25em] text-lime-400"
+              >
+                What I Can Do
+              </p>
+
+              <h2 class="text-4xl font-black tracking-tight sm:text-5xl">
+                Skills & Services
+              </h2>
+            </div>
+
+            <p class="max-w-md text-sm leading-relaxed text-zinc-500">
+              Dari website sampai konten dan pengolahan data, saya membantu
+              mengubah kebutuhan anda menjadi solusi digital yang lebih praktis.
+            </p>
+          </div>
+
+          <!-- Cards Grid: data kartu berasal dari services-data.js -->
+          <div
+            id="serviceCards"
+            class="grid gap-5 md:grid-cols-2 lg:grid-cols-3"
+          ></div>
+
+          <template id="serviceCardTemplate">
+            <article class="service-card group">
+              <img
+                data-service-image
+                class="service-image"
+                alt=""
+                loading="eager"
+                decoding="async"
+              />
+
+              <div class="flex items-start justify-between gap-4">
+                <div>
+                  <p
+                    data-service-category
+                    class="mb-2 text-xs font-semibold uppercase tracking-wider text-zinc-600"
+                  ></p>
+                  <h3 data-service-title class="text-xl font-bold"></h3>
+                </div>
+                <span data-service-price class="price-tag"></span>
+              </div>
+
+              <p
+                data-service-description
+                class="mt-5 text-sm leading-6 text-zinc-400"
+              ></p>
+
+              <button type="button" class="detail-button mt-7">
+                Lihat Detail
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </article>
+          </template>
+        </div>
+      </section>
+
+      <!-- =================================================
+             CONTACT
+        ================================================== -->
+      <section id="contact" class="relative px-5 py-24 sm:py-32">
+        <div class="mx-auto max-w-6xl" id="contactHeading">
+          <div class="contact-box">
+            <div class="relative z-10 max-w-3xl">
+              <p
+                class="mb-4 text-sm font-bold uppercase tracking-[0.25em] text-lime-400"
+              >
+                Let's Create Something
+              </p>
+
+              <h2 class="text-4xl font-black leading-tight sm:text-6xl">
+                Punya ide?
+                <br />
+                <span class="text-lime-400">Mari wujudkan.</span>
+              </h2>
+
+              <p class="mt-6 max-w-xl text-zinc-400">
+                Ceritakan kebutuhan kamu. Kita bisa diskusikan konsep, budget,
+                dan solusi yang paling cocok.
+              </p>
+
+              <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+                <a
+                  href="https://wa.me/6285189402618"
+                  target="_blank"
+                  class="inline-flex items-center justify-center rounded-full bg-lime-400 px-7 py-3.5 font-bold text-black transition hover:bg-lime-300 hover:shadow-[0_0_30px_rgba(204,255,0,0.3)]"
+                >
+                  <i class="fa-brands fa-whatsapp mr-2 text-lg"></i>
+                  WhatsApp
+                </a>
+
+                <a
+                  href="https://www.instagram.com/mhdfajar_7305/"
+                  target="_blank"
+                  class="inline-flex items-center justify-center rounded-full border border-white/10 bg-white/5 px-7 py-3.5 font-semibold transition hover:border-lime-400/40 hover:text-lime-300"
+                >
+                  <i class="fa-brands fa-instagram mr-2"></i>
+                  Instagram
+                </a>
+              </div>
+            </div>
+
+            <div class="contact-decoration">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+    <footer class="border-t border-white/10 bg-black/70">
+      <div class="mx-auto max-w-6xl px-5 py-10">
+        <div
+          class="flex flex-col gap-8 md:flex-row md:items-center md:justify-between"
+        >
+          <!-- Brand -->
+          <div>
+            <div class="flex items-center gap-3">
+              <div class="logo-icon">
+                <i class="fa-solid fa-bolt"></i>
+              </div>
+
+              <span class="font-bold">
+                FAJAR<span class="text-lime-400">.</span>
+              </span>
+            </div>
+
+            <p class="mt-3 max-w-sm text-sm leading-6 text-zinc-600">
+              Building useful digital experiences with creativity, technology,
+              and purpose.
+            </p>
+          </div>
+
+          <!-- Social -->
+          <div class="flex items-center gap-3">
+            <a
+              href="https://www.instagram.com/mhdfajar_7305/"
+              class="social-icon"
+              aria-label="Instagram"
+              target="_blank"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a
+              href="https://www.tiktok.com/@syuuk7305?is_from_webapp=1&sender_device=pc"
+              class="social-icon"
+              aria-label="TikTok"
+              target="_blank"
+            >
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+
+            <a
+              href="https://github.com/Fajar7305"
+              class="social-icon"
+              aria-label="GitHub"
+              target="_blank"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/muhammad-fajar-63b079308/"
+              class="social-icon"
+              aria-label="LinkedIn"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Bottom -->
+        <div
+          class="mt-8 flex flex-col gap-3 border-t border-white/5 pt-6 text-xs text-zinc-700 sm:flex-row sm:items-center sm:justify-between"
+        >
+          <p>
+            © <span id="currentYear"></span> Fajar Creative. All rights
+            reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- =====================================================
+         DETAIL MODAL
+    ====================================================== -->
+    <div
+      id="detailModal"
+      class="fixed inset-0 z-[100] hidden items-center justify-center bg-black/80 px-5 backdrop-blur-md"
+    >
+      <div id="modalContent" class="modal-box w-full max-w-lg">
+        <button
+          id="closeModal"
+          class="absolute right-5 top-5 flex h-9 w-9 items-center justify-center rounded-full border border-white/10 text-zinc-400 transition hover:border-lime-400/30 hover:text-lime-400"
+        >
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <img
+          data-service-image
+          class="service-image"
+          loading="lazy"
+          decoding="async"
+        />
+
+        <p class="text-xs font-bold uppercase tracking-[0.2em] text-lime-400">
+          Service Detail
+        </p>
+
+        <h3 id="modalTitle" class="mt-2 text-2xl font-bold">Service</h3>
+
+        <p id="modalPrice" class="mt-4 text-sm font-bold text-lime-400"></p>
+        <p id="modalDescription" class="mt-3 leading-7 text-zinc-400"></p>
+
+        <a
+          href="#contactHeading"
+          id="modalContact"
+          class="mt-7 inline-flex rounded-full bg-lime-400 px-6 py-3 font-bold text-black transition hover:bg-lime-300"
+        >
+          Konsultasikan Sekarang
+          <i class="fa-solid fa-arrow-right ml-2"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Data and JavaScript -->
+    <script src="services-data.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
