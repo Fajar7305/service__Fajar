@@ -60,34 +60,4 @@ window.services = [
         detail:
             "Sudah punya pengalaman dalam mengelola tim, membuat jadwal, dan memastikan proyek berjalan lancar. Bisa bantu koordinasi tim untuk kerjaan yang sedang berjalan."
     },
-    {
-        category: "Pendidikan",
-        title: "Muazzin/Imam/Remaja Mesjid",
-        price: "Bayar seikhlasnya",
-        image: "img/ngaji.jpg",
-        description:
-            "6 Tahun di Pesantren DAMORA (Dayah Modern Arun)",
-        detail:
-            "Bisa menjadi imam pengganti, muazzin, atau membersihkan dan merapikan masjid. Bisa juga menjadi cleaning service. Bayar se ikhlasnya sajaa"
-    },
-    {
-        category: "Olahraga",
-        title: "Pelatih Basket/Karate",
-        price: "Bayar seikhlasnya",
-        image: "img/basket.jpg",
-        description:
-            "Bisa bantu latih anak-anak dalam olahraga basket dan karate.",
-        detail:
-            "Bisa menjadi pelatih basket atau karate untuk anak-anak. Memberikan latihan yang menyenangkan dan mendidik. Bayar se ikhlasnya sajaa"
-    },
-    {
-        category: "Pendidikan",
-        title: "Mentor Self-improvement",
-        price: "Bayar seikhlasnya",
-        image: "img/self-improvement.jpg",
-        description:
-            "Penasehat + Pengarah, cara manage waktu, melawan Malas, dan membentuk Mental serta membangun kebiasaan baik.",
-        detail:
-            "Bisa menjadi mentor untuk pengembangan diri, memberikan saran dan arahan dalam mengelola waktu, mengatasi kemalasan, membentuk mental yang kuat, dan membangun kebiasaan baik. Bayar se ikhlasnya sajaa"
-    }
 ];
