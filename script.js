@@ -126,9 +126,7 @@ window.services.forEach((service, index) => {
     const serviceImage = card.querySelector("[data-service-image]");
     serviceImage.src = service.image;
     serviceImage.alt = service.title;
-    card.querySelector("[data-service-category]").textContent = `${String(index + 1).padStart(2, "0")} / ${service.category}`;
     card.querySelector("[data-service-title]").textContent = service.title;
-    card.querySelector("[data-service-price]").textContent = service.price;
     card.querySelector("[data-service-description]").textContent = service.description;
     card.querySelector(".detail-button").addEventListener("click", () => { openServiceModal(service);
     });
@@ -253,29 +251,4 @@ document.getElementById(
 
 const navbar = document.querySelector(
     ".navbar-glass"
-);
-
-window.addEventListener(
-    "scroll",
-    () => {
-
-        if (window.scrollY > 30) {
-
-            navbar.style.background =
-                "rgba(5, 5, 5, 0.88)";
-
-            navbar.style.borderColor =
-                "rgba(204, 255, 0, 0.08)";
-
-        } else {
-
-            navbar.style.background =
-                "rgba(8, 8, 8, 0.72)";
-
-            navbar.style.borderColor =
-                "rgba(255, 255, 255, 0.1)";
-        }
-
-    },
-    { passive: true }
 );
